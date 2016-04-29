@@ -11,4 +11,8 @@ Este es un proyecto para la asignatura "Análisis y Diseño de Sistemas"
 
  `npm test`
 
+### Useful Links
+[Mocha](https://mochajs.org)
+[Chai API](http://chaijs.com/api/bdd/)
+[Lodash](https://lodash.com/docs)
 
