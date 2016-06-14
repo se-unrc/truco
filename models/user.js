@@ -5,17 +5,16 @@
 var config = require('../config');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-
-// var db = mongoose.createConnection(config.db[process.env.NODE_ENV]);
+var passportLocalMongoose = require('passport-local-mongoose');
 
 /*
  * User Schema
  */
 var UserSchema = new Schema({
-  name: { type: String, required: true, unique: true },
+  username: String,
   password: String
 });
 
-var User = mongoose.model('User', UserSchema);
+UserSchema.plugin(passportLocalMongoose);
 
-module.exports.user = User;
+module.exports = mongoose.model('User', UserSchema);
