@@ -4,7 +4,8 @@
   "description": "Quiero re truco",
   "main": "engine.js",
   "scripts": {
-    "test": "mocha"
+    "test": "NODE_ENV=test mocha --reporter spec",
+    "start": "NODE_ENV=development mocha"
   },
   "author": "me",
   "license": "MIT",
@@ -13,6 +14,7 @@
   },
   "dependencies": {
     "javascript-state-machine": "^2.3.5",
-    "lodash": "^4.6.1"
+    "lodash": "^4.6.1",
+    "mongoose": "^4.4.20"
   }
 }

@@ -5,7 +5,6 @@
  * @param gmae [Object]: game where the round belongs
  *
  */
-
 var _ = require('lodash');
 var StateMachine = require("../node_modules/javascript-state-machine/state-machine.js");
 var deckModel = require("./deck");
