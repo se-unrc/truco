@@ -5,7 +5,7 @@
   "main": "engine.js",
   "scripts": {
     "test": "NODE_ENV=test mocha --reporter spec",
-    "start": "NODE_ENV=development mocha"
+    "start": "NODE_ENV=development node server.js"
   },
   "author": "me",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "chai": "^3.2.0"
   },
   "dependencies": {
+    "express": "^4.13.4",
     "javascript-state-machine": "^2.3.5",
     "lodash": "^4.6.1",
     "mongoose": "^4.4.20"
